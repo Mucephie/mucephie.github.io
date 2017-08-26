@@ -60,11 +60,11 @@ li a:hover:not(.active) {
 }
 .img-bio {
   z-layer:15;
-  padding-top:50px;
+  padding-top:50px;
   padding:20px;
   border-radius: 20%;
   border-width:3px;
-  border-color: black;
+  border-color:black;
   height:150px;
   width:150px;
 }
