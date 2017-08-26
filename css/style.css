@@ -1,5 +1,5 @@
 body {
-  background:black;
+  background: black;
   /*background-image: url("http://h2pool.pt/images/background.jpg");
     /*("http://lorempixel.com/1920/1920/nature/");*/
 }
@@ -64,7 +64,7 @@ li a:hover:not(.active) {
   padding:20px;
   border-radius: 20%;
   border-width:3px;
-  border-color:black;
+  border-color: black;
   height:150px;
   width:150px;
 }
