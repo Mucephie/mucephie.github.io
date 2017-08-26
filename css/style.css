@@ -35,6 +35,7 @@ li a:hover:not(.active) {
 
 .active-btn {
     background-color: #0050AF;
+    height:100%;
   
 }
 .section-block {
