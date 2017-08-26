@@ -1,5 +1,5 @@
 body {
-  background:#000000;
+  background-color:#000000;
 
 }
 .navbar-my-version{
@@ -14,7 +14,6 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(30,30,30,.30);
 }
 
 li {
