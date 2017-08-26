@@ -1,11 +1,9 @@
 body {
-  background:black;
-  /*background-image: url("http://h2pool.pt/images/background.jpg");
-    /*("http://lorempixel.com/1920/1920/nature/");*/
+  background:#000000;
+
 }
 .navbar-my-version{
   background-color: rgba(30, 30, 30, 0.7);
-  border-color: rgba(0,0,0,0.3);
   position: fixed;
   z-index: 10;
   width:100%;
