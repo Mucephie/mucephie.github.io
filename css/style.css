@@ -1,1 +1,148 @@
+body {
+  background:black;
+  /*background-image: url("http://h2pool.pt/images/background.jpg");
+    /*("http://lorempixel.com/1920/1920/nature/");*/
+}
+.navbar-my-version{
+  background-color: rgba(30, 30, 30, 0.7);
+  border-color: rgba(0,0,0,0.3);
+  position: fixed;
+  z-index: 10;
+  width:100%;
+}
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(30,30,30,.30);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active-btn {
+    background-color: #0050AF;
+  
+}
+.section-block {
+  min-height:50px;
+  margin-left:5%;
+  margin-top:10px;
+  width:90%;
+  color:white;
+  background-color: rgba(30, 30, 30, 0.7);
+}
+
+
+
+.h3t{
+  margin:auto;
+  text-align: center;
+  font-family:Impact, Charcoal, sans-serif;
+  padding:5px;
+  background-color: rgba(0,150,255,.5);
+  
+}
+.img-bio {
+  z-layer:15;
+  padding-top:50px;
+  padding:20px;
+  border-radius: 20%;
+  border-width:3px;
+  border-color:black;
+  height:150px;
+  width:150px;
+}
+.img-biog {
+  z-layer:15;
+  padding-top:50px;
+  padding:20px;
+  border-radius: 8%;
+  border-width:3px;
+  border-color:black;
+  height:300px;
+  width:500px;
+}
+.img-biog2 {
+  z-layer:15;
+  padding-top:50px;
+  padding:20px;
+  border-radius: 8%;
+  border-width:3px;
+  border-color:black;
+  height:250px;
+  width:230px;
+}
+.bio-para{
+  margin:10px;
+}
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(50,50,50,.5);
+}
+.site-header {
+  min-height:200px;
+  width:90%;
+  margin-left:5%;
+  background-image: url("http://viralportal.net/wp-content/uploads/2015/03/andromeda-galaxy-46505.jpg");
+  background-size: cover;
+   
+}
+.buffer{
+  height:50px;
+  width:100%";
+}
+.contact-tiles {
+  color:white;
+  width:75px;
+  Height:75px;
+  display:flex;
+  float:left;
+  border: 1px solid #ccc;
+  text-align: center;
+   
+  
+}
+.contact-tiles:Hover{
+  border: 1px solid #000;
+ 
+}
+.ico-contact{
+  vertical-align: middle;
+  horizontal-align: middle;
+  color:white;
+  text-align: center;
+   margin:10px;
+}
