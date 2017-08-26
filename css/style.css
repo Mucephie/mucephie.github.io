@@ -3,7 +3,7 @@ body {
 
 }
 .navbar-my-version{
-  background-color: rgba(30, 30, 30, 0.7);
+  background-color: rgba(30, 30, 70, 0.7);
   position: fixed;
   z-index: 10;
   width:100%;
