@@ -45,7 +45,7 @@ html { background: #000; }
 
 body {
   margin: 0;
-  background: var(--paper);
+  /* background: var(--paper); */
   color: var(--ink);
   font-family: var(--font-serif);
   font-size: 1.125rem;
