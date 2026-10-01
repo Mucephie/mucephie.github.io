@@ -1,0 +1,225 @@
+/* ==========================================================
+   CHOOSE YOUR ACCENT COLOR HERE!
+   
+   Instructions:
+   Copy one of the hex color codes below and paste it next to 
+   --accent: on line 25.
+   
+   Color Presets:
+     Deep Teal:       #0f766e  (Default)
+     Classic Navy:    #1d4ed8
+     Crimson Red:     #991b1b
+     Forest Green:    #15803d
+     Royal Purple:    #7e22ce
+     Warm Rust:       #c2410c
+     Modern Slate:    #334155
+   ========================================================== */
+
+:root {
+  /* PASTE CHOSEN ACCENT COLOR HERE: */
+  --accent: #0f766e;
+
+  /* Theme variables */
+  --accent-light: color-mix(in srgb, var(--accent) 12%, transparent);
+  --ink: #111827;
+  --ink-muted: #4b5563;
+  --paper: #fbfbfa;
+  --card-bg: #ffffff;
+  --line: #e2e8f0;
+  --pill-bg: #f3f4f6;
+  --font-serif: Georgia, "Times New Roman", serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  line-height: 1.65;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 24px 20px;
+  border-bottom: 1px solid var(--line);
+}
+
+.wordmark {
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.wordmark:hover { color: var(--accent); }
+
+nav { display: flex; flex-wrap: wrap; gap: 18px; font-family: var(--font-sans); font-size: 0.95rem; }
+nav a { color: var(--ink-muted); text-decoration: none; font-weight: 500; }
+nav a:hover, nav a.active { color: var(--accent); font-weight: 600; }
+
+/* Main Content */
+main { max-width: 860px; margin: 0 auto; padding: 56px 20px 80px; }
+
+.eyebrow {
+  color: var(--accent);
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0 0 24px;
+}
+
+h2 {
+  font-family: var(--font-sans);
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-top: 48px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 8px;
+}
+
+.lede {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { opacity: 0.85; }
+
+/* Profile Link Pills */
+.link-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 24px 0 32px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--pill-bg);
+  border: 1px solid var(--line);
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+}
+
+.pill:hover {
+  background: var(--accent-light);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.pill svg { flex-shrink: 0; }
+
+/* Research Tags */
+.tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.tag {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+}
+
+/* Card Block */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 20px;
+}
+.card h3 { margin: 0 0 8px; font-family: var(--font-sans); font-size: 1.15rem; }
+.card p { margin: 0 0 12px; }
+.card-meta { font-family: var(--font-sans); font-size: 0.9rem; font-weight: 600; margin: 0; }
+
+/* Publications Styling */
+.publications { padding-left: 20px; margin: 0; }
+.publications li { margin-bottom: 24px; }
+.pub-title { font-weight: 700; font-size: 1.05rem; }
+.pub-authors { color: var(--ink-muted); font-size: 0.98rem; }
+.pub-venue { font-size: 0.95rem; }
+.pub-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 8px; }
+
+.badge {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 2px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  background: transparent;
+}
+.badge:hover { background: var(--accent-light); }
+
+/* Collapsible BibTeX */
+.bibtex-toggle { display: inline-block; }
+.bibtex-toggle summary { list-style: none; }
+.bibtex-toggle summary::-webkit-details-marker { display: none; }
+.bibtex-toggle pre {
+  margin-top: 10px;
+  background: #1e293b;
+  color: #f8fafc;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  overflow-x: auto;
+  font-family: monospace;
+}
+
+.note {
+  margin-top: 40px;
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  color: var(--ink-muted);
+  font-style: italic;
+}
+
+footer {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 24px 20px;
+  border-top: 1px solid var(--line);
+  color: var(--ink-muted);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+}
+
+/* Mobile Friendly */
+@media (max-width: 650px) {
+  .site-header { flex-direction: column; align-items: flex-start; gap: 12px; }
+  main { padding-top: 36px; }
+}
