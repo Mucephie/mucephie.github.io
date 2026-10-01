@@ -14,7 +14,9 @@
      Warm Rust:       #c2410c
      Modern Slate:    #334155
    ========================================================== */
-html { background: #000; }
+html { 
+   background: #000000; 
+}
 
 :root {
   /* PASTE CHOSEN ACCENT COLOR HERE: */
