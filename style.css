@@ -20,14 +20,14 @@ html {
 
 :root {
   /* PASTE CHOSEN ACCENT COLOR HERE: */
-  --accent: #0f766e;
+  --accent: rgba(255, 255, 155, 0.8);
 
   /* Theme variables */
   --accent-light: color-mix(in srgb, var(--accent) 12%, transparent);
-  --ink: #111827;
-  --ink-muted: #4b5563;
-  --paper: #fbfbfa;
-  --card-bg: #ffffff;
+  --ink: rgba(255, 255, 155, 0.8);
+  --ink-muted: rgba(255, 255, 155, 0.6);
+  --paper: rgba(10, 9, 0, 0.45);
+  --card-bg: rgba(10, 9, 0, 0.45);
   --line: #e2e8f0;
   --pill-bg: #f3f4f6;
   --font-serif: Georgia, "Times New Roman", serif;
